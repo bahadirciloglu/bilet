@@ -19,20 +19,28 @@ Event participants can easily verify their ticket ownership through the blockcha
 This project provides a foundation for building decentralized event systems, where users can purchase, sell, or transfer event tickets securely without intermediaries. The smart contract handles event creation, ticket minting, and ownership verification through NEAR's blockchain infrastructure, ensuring high scalability and low transaction costs.
 
 
-Features
+## Features
 
-Mint Tickets for Specific Events: This project allows event organizers to create events on the NEAR blockchain and mint unique NFT (Non-Fungible Token) tickets for each event. Unlike traditional digital tickets, these NFT tickets are immutable and resistant to counterfeiting. For each event, a set number of tickets is minted, and users can purchase these available tickets.
-Verify Ticket Ownership via Blockchain: Using blockchain technology, ticket ownership can be easily verified. Each ticket is linked to the owner's NEAR wallet, ensuring authenticity and preventing fraudulent tickets. Event organizers can verify ticket ownership on the blockchain at the entrance, allowing only valid ticket holders to attend the event.
-Installation Guide
+### Mint Tickets for Specific Events
+This project allows event organizers to create events on the NEAR blockchain and mint unique NFT (Non-Fungible Token) tickets for each event. Unlike traditional digital tickets, these NFT tickets are immutable and resistant to counterfeiting. For each event, a set number of tickets is minted, and users can purchase these available tickets.
+
+### Verify Ticket Ownership via Blockchain
+Using blockchain technology, ticket ownership can be easily verified. Each ticket is linked to the owner's NEAR wallet, ensuring authenticity and preventing fraudulent tickets. Event organizers can verify ticket ownership on the blockchain at the entrance, allowing only valid ticket holders to attend the event.
+
+## Installation Guide
+
+
+## Installation Guide
 
 Follow these steps to set up the project and deploy the smart contract to the NEAR blockchain:
 
-Install the NEAR CLI:
+### Install the NEAR CLI
 
 The NEAR Command Line Interface (CLI) is used to interact with the NEAR blockchain. Install it globally using npm:
-Bash
-<npm install -g near-cli>
-Use code with caution.
+
+```bash
+npm install -g near-cli
+
 
 Login to NEAR CLI:
 
