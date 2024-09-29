@@ -1,15 +1,23 @@
-NEAR Smart Contract for Event Tickets
-Project Overview
+# NEAR Smart Contract for Event Tickets Project Overview
 
 The NEAR Smart Contract for Event Tickets allows decentralized event creation and ticket management on the NEAR blockchain. This project utilizes the power of blockchain technology to mint non-fungible tickets (NFTs) that are securely linked to specific events, preventing forgery and ensuring transparent ownership.
 
-Key Features
+## Key Features
 
-Decentralized Event Management: Organizers can create events, define available tickets, and manage them transparently.
-NFT-Based Tickets: Each ticket is a unique NFT (Non-Fungible Token) that represents ownership and is securely stored on the NEAR blockchain.
-Forgery Protection: By leveraging the immutable nature of blockchain, ticket counterfeiting is eliminated.
-Ownership Verification: Event participants can easily verify their ticket ownership through the blockchain.
+### Decentralized Event Management
+Organizers can create events, define available tickets, and manage them transparently.
+
+### NFT-Based Tickets
+Each ticket is a unique NFT (Non-Fungible Token) that represents ownership and is securely stored on the NEAR blockchain.
+
+### Forgery Protection
+By leveraging the immutable nature of blockchain, ticket counterfeiting is eliminated.
+
+### Ownership Verification
+Event participants can easily verify their ticket ownership through the blockchain.
+
 This project provides a foundation for building decentralized event systems, where users can purchase, sell, or transfer event tickets securely without intermediaries. The smart contract handles event creation, ticket minting, and ownership verification through NEAR's blockchain infrastructure, ensuring high scalability and low transaction costs.
+
 
 Features
 
