@@ -1,45 +1,76 @@
-# NEAR Smart Contract Rust Template
+# NEAR Smart Contract for Event Tickets
 
-Project structure for writing smart contracts for NEAR in Rust.
+## Project Overview
+The NEAR Smart Contract for Event Tickets allows decentralized event creation and ticket management on the NEAR blockchain. This project utilizes the power of blockchain technology to mint non-fungible tickets (NFTs) that are securely linked to specific events, preventing forgery and ensuring transparent ownership.
 
-## Required Software
+Key Features:
+Decentralized Event Management: Organizers can create events, define available tickets, and manage them transparently.
+NFT-Based Tickets: Each ticket is a unique NFT (Non-Fungible Token) that represents ownership and is securely stored on the NEAR blockchain.
+Forgery Protection: By leveraging the immutable nature of blockchain, ticket counterfeiting is eliminated.
+Ownership Verification: Event participants can easily verify their ticket ownership through the blockchain.
+This project provides a foundation for building decentralized event systems, where users can purchase, sell, or transfer event tickets securely without intermediaries. The smart contract handles event creation, ticket minting, and ownership verification through NEAR's blockchain infrastructure, ensuring high scalability and low transaction costs.
 
-- [Rust & Cargo](https://www.rust-lang.org/tools/install)
-  - With the WASM target installed: `rustup target add wasm32-unknown-unknown`
-  - [cargo-make](https://crates.io/crates/cargo-make): `cargo install cargo-make`
 
-## Usage
 
-### Scripts
+## Features
+Mint Tickets for Specific Events:
+This project allows event organizers to create events on the NEAR blockchain and mint unique NFT (Non-Fungible Token) tickets for each event. Unlike traditional digital tickets, these NFT tickets are immutable and resistant to counterfeiting. For each event, a set number of tickets is minted, and users can purchase these available tickets.
 
-#### `cargo make clean`
+Verify Ticket Ownership via Blockchain:
+Using blockchain technology, ticket ownership can be easily verified. Each ticket is linked to the owner’s NEAR wallet, ensuring authenticity and preventing fraudulent tickets. Event organizers can verify ticket ownership on the blockchain at the entrance, allowing only valid ticket holders to attend the event.
 
-Removes the `target` and `neardev` directories.
 
-#### `cargo make test`
 
-Runs unit tests using the default target. (Note: behavior may differ from simply running `cargo test` depending on the target specified in `.cargo/config.toml`.)
+## Installation Guide
+Follow these steps to set up the project and deploy the smart contract to the NEAR blockchain:
 
-#### `cargo make build`
+Install the NEAR CLI:
+The NEAR Command Line Interface (CLI) is used to interact with the NEAR blockchain. Install it globally using npm:
 
-Compiles the smart contract to a WebAssembly binary. The binary path is `./target/wasm32-unknown-unknown/release/<package>.wasm`.
+bash
+Copy code
+npm install -g near-cli
+Login to NEAR CLI:
+Authenticate with your NEAR account to interact with the blockchain:
 
-#### `cargo make optimize`
+bash
+Copy code
+near login
+This will open a browser window asking you to authorize the CLI to use your NEAR account.
 
-Cleans up and optimizes the most recently-built WASM binary. The optimized binary path is `./deploy/<name>.wasm`.
+Clone the Repository:
+Clone this GitHub repository to your local machine:
 
-**Note**: In order to optimize the WASM binary, you must have [`wasm-tools`](https://github.com/bytecodealliance/wasm-tools) installed:
+bash
+Copy code
+git clone https://github.com/bahadirciloglu/bilet.git
+cd bilet
+Build the Smart Contract:
+Use cargo (for Rust-based contracts) to build the smart contract:
 
-```txt
-cargo install wasm-tools
-```
+bash
+Copy code
+cargo build --target wasm32-unknown-unknown --release
+The compiled contract will be located in the target/wasm32-unknown-unknown/release directory.
 
-`wasm-tools` is also available on Homebrew:
+Deploy the Smart Contract:
+Deploy the smart contract to your NEAR account:
 
-```txt
-brew install wasm-tools
-```
+bash
+Copy code
+near deploy --accountId YOUR_ACCOUNT --wasmFile ./target/wasm32-unknown-unknown/release/event_contract.wasm
+Replace YOUR_ACCOUNT with your NEAR testnet account ID.
 
-## Authors
+Initialize the Contract (Optional):
+If your smart contract requires initialization, you can call an initialization function:
 
-- Jacob Lindahl <jacob.lindahl@near.org> [@sudo_build](https://twitter.com/sudo_build)
+bash
+Copy code
+near call YOUR_ACCOUNT init '{}' --accountId YOUR_ACCOUNT
+Run Tests (Optional):
+To ensure everything is working as expected, run the tests:
+
+bash
+Copy code
+cargo test
+
