@@ -31,8 +31,8 @@ Using blockchain technology, ticket ownership can be easily verified. Each ticke
 
 ### Install the NEAR CLI
 Clone the repository and install the NEAR CLI:
-```bash
-npm install -g near-cli
+##
+    npm install -g near-cli
 
 
 The NEAR Command Line Interface (CLI) is used to interact with the NEAR blockchain. Install it globally using npm:
