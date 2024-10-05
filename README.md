@@ -1,7 +1,7 @@
 
 # NEAR Smart Contract for Event Tickets Project Overview
 
-The NEAR Smart Contract for Event Tickets allows decentralized event creation and ticket management on the NEAR blockchain. This project utilizes the power of blockchain technology to mint non-fungible tickets (NFTs) that are securely linked to specific events, preventing forgery and ensuring transparent ownership.
+>The NEAR Smart Contract for Event Tickets allows decentralized event creation and ticket management on the NEAR blockchain. This project utilizes the power of blockchain technology to mint non-fungible tickets (NFTs) that are securely linked to specific events, preventing forgery and ensuring transparent ownership.
 
 ## Key Features
 
