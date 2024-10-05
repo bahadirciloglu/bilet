@@ -36,17 +36,12 @@ Clone the repository and install the NEAR CLI:
 
 
 The NEAR Command Line Interface (CLI) is used to interact with the NEAR blockchain. Install it globally using npm:
-
-```bash
-
-
-
 Login to NEAR CLI:
-
 Authenticate with your NEAR account to interact with the blockchain:
 
-Bash
-<near login>
+##
+        near login
+        
 Use code with caution.
 
 This will open a browser window asking you to authorize the CLI to use your NEAR account.
@@ -55,9 +50,10 @@ Clone the Repository:
 
 Clone this GitHub repository to your local machine:
 
-Bash
-<git clone https://github.com/bahadirciloglu/bilet.git>
-<cd bilet>
+##
+        git clone https://github.com/bahadirciloglu/bilet.git
+        cd bilet
+
 Use code with caution.
 
 Build the Smart Contract:
