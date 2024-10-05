@@ -51,8 +51,8 @@ Clone the Repository:
 Clone this GitHub repository to your local machine:
 
 ##
-        git clone https://github.com/bahadirciloglu/bilet.git
-        cd bilet
+    git clone https://github.com/bahadirciloglu/bilet.git
+    cd bilet
 
 Use code with caution.
 
@@ -61,7 +61,7 @@ Build the Smart Contract:
 Use cargo (for Rust-based contracts) to build the smart contract:
 
 ##
-        cargo build --target wasm32-unknown-unknown --release
+    cargo build --target wasm32-unknown-unknown --release
         
 Use code with caution.
 
@@ -72,7 +72,7 @@ Deploy the Smart Contract:
 Deploy the smart contract to your NEAR account:
 
 ##
-        near deploy --accountId YOUR_ACCOUNT --wasmFile ./target/wasm32-unknown-unknown/release/event_contract.wasm
+    near deploy --accountId YOUR_ACCOUNT --wasmFile ./target/wasm32-unknown-unknown/release/event_contract.wasm
 
 Use code with caution.
 
@@ -83,7 +83,7 @@ Initialize the Contract (Optional):
 If your smart contract requires initialization, you can call an initialization function:
 
 ##
-        near call YOUR_ACCOUNT init '{}' --accountId YOUR_ACCOUNT
+    near call YOUR_ACCOUNT init '{}' --accountId YOUR_ACCOUNT
         
 Use code with caution.
 
@@ -92,7 +92,7 @@ Run Tests (Optional):
 To ensure everything is working as expected, run the tests:
 
 ##
-        cargo test
+    cargo test
         
 Use code with caution.
 
