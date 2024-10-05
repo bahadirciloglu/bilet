@@ -19,7 +19,6 @@ Event participants can easily verify their ticket ownership through the blockcha
 
 This project provides a foundation for building decentralized event systems, where users can purchase, sell, or transfer event tickets securely without intermediaries. The smart contract handles event creation, ticket minting, and ownership verification through NEAR's blockchain infrastructure, ensuring high scalability and low transaction costs.
 
-
 ## Features
 
 ### Mint Tickets for Specific Events
@@ -30,13 +29,11 @@ Using blockchain technology, ticket ownership can be easily verified. Each ticke
 
 ## Installation Guide
 
-
-## Installation Guide
-
-Follow these steps to set up the project and deploy the smart contract to the NEAR blockchain:
-
 ### Install the NEAR CLI
-1. Clone the repository: **```npm install -g near-cli```**
+Clone the repository and install the NEAR CLI:
+```bash
+npm install -g near-cli
+
 
 The NEAR Command Line Interface (CLI) is used to interact with the NEAR blockchain. Install it globally using npm:
 
