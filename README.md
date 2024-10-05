@@ -36,7 +36,7 @@ Using blockchain technology, ticket ownership can be easily verified. Each ticke
 Follow these steps to set up the project and deploy the smart contract to the NEAR blockchain:
 
 ### Install the NEAR CLI
-1. Clone the repository: **`npm install -g near-cli`**
+1. Clone the repository: **```npm install -g near-cli```**
 
 The NEAR Command Line Interface (CLI) is used to interact with the NEAR blockchain. Install it globally using npm:
 
