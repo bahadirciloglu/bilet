@@ -1,5 +1,4 @@
 
-## Smart Contract for Event Tickets
 # NEAR Smart Contract for Event Tickets Project Overview
 
 The NEAR Smart Contract for Event Tickets allows decentralized event creation and ticket management on the NEAR blockchain. This project utilizes the power of blockchain technology to mint non-fungible tickets (NFTs) that are securely linked to specific events, preventing forgery and ensuring transparent ownership.
@@ -37,11 +36,12 @@ Using blockchain technology, ticket ownership can be easily verified. Each ticke
 Follow these steps to set up the project and deploy the smart contract to the NEAR blockchain:
 
 ### Install the NEAR CLI
+1. Clone the repository: **`npm install -g near-cli`**
 
 The NEAR Command Line Interface (CLI) is used to interact with the NEAR blockchain. Install it globally using npm:
 
 ```bash
-npm install -g near-cli
+
 
 
 Login to NEAR CLI:
