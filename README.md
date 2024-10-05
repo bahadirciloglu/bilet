@@ -60,8 +60,9 @@ Build the Smart Contract:
 
 Use cargo (for Rust-based contracts) to build the smart contract:
 
-Bash
-<cargo build --target wasm32-unknown-unknown --release>
+##
+        cargo build --target wasm32-unknown-unknown --release
+        
 Use code with caution.
 
 The compiled contract will be located in the target/wasm32-unknown-unknown/release directory.
@@ -70,8 +71,9 @@ Deploy the Smart Contract:
 
 Deploy the smart contract to your NEAR account:
 
-Bash
-<near deploy --accountId YOUR_ACCOUNT --wasmFile ./target/wasm32-unknown-unknown/release/event_contract.wasm>
+##
+        near deploy --accountId YOUR_ACCOUNT --wasmFile ./target/wasm32-unknown-unknown/release/event_contract.wasm
+
 Use code with caution.
 
 Replace YOUR_ACCOUNT with your NEAR testnet account ID.
@@ -80,16 +82,18 @@ Initialize the Contract (Optional):
 
 If your smart contract requires initialization, you can call an initialization function:
 
-Bash
-<near call YOUR_ACCOUNT init '{}' --accountId YOUR_ACCOUNT>
+##
+        near call YOUR_ACCOUNT init '{}' --accountId YOUR_ACCOUNT
+        
 Use code with caution.
 
 Run Tests (Optional):
 
 To ensure everything is working as expected, run the tests:
 
-Bash
-<cargo test>
+##
+        cargo test
+        
 Use code with caution.
 
 About
