@@ -40,7 +40,7 @@ Login to NEAR CLI:
 Authenticate with your NEAR account to interact with the blockchain:
 
 ##
-        near login
+    near login
         
 Use code with caution.
 
